@@ -22,9 +22,8 @@ function [aFhrInterp,aGapAtBegin,aGapAtEnd] = interpolateAllGaps(aFhr, nFs, bPlo
 %  INTERPOLATESMALLGAPS
 %
 % About:
-%  Jirka Spilka
-%  http://www.feld.cvut.cz
-%  http://bio.felk.cvut.cz
+%  Jiri Spilka
+%  CIIRC, CVUT, Czech Republic
 %
 % Modifications:
 %

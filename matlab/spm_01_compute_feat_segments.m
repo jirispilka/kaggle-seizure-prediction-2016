@@ -3,7 +3,10 @@
 %
 % 1 = preictal
 % 0 = interictal
-clear all;
+%
+% Jiri Spilka, 2016
+%
+clear;
 close all;
 clc;
 
@@ -17,7 +20,7 @@ clc;
 addpath(genpath(pwd));
 
 if strcmpi('jirka',getCurrentUser())
-    path = '/home/jirka/data/kaggle_seisure_prediction_2016';
+    path = '~/data/kaggle_seisure_prediction_2016';
 else
     if (MetaParPool('open') <= 0)
         disp('ERROR: Unable to initialize MetaParPool! Exiting...');

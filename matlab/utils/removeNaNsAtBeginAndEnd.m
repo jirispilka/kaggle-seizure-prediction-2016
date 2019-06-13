@@ -1,4 +1,6 @@
-function [aFhrOut aGapAtBegin aGapAtEnd] = removeNaNsAtBeginAndEnd(aFhr)
+function [aFhrOut, aGapAtBegin, aGapAtEnd] = removeNaNsAtBeginAndEnd(aFhr)
+% 
+% CIIRC, CVUT, Czech Republic
 
 aFhrOut = aFhr;
 

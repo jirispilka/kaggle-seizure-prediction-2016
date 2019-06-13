@@ -2,7 +2,10 @@
 % 
 % 1 = preictal
 % 0 = interictal
-clear all;
+%
+% Jiri Spilka, 2016
+
+clear;
 close all;
 clc;
 

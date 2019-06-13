@@ -2,7 +2,10 @@
 %
 % 1 = preictal
 % 0 = interictal
-clear all;
+%
+% Jiri Spilka, 2016
+%
+clear;
 close all;
 clc;
 
@@ -124,7 +127,7 @@ for idataf = 1:length(data_folders)
             data_quality(kk) = mean(q);
             
             cfeat = spm_ut_compute_feat_multivariate(data, sel_feat, fs);
-            [Xt aFeatNames] = spm_ut_flatten_channels({cfeat});
+            [Xt, aFeatNames] = spm_ut_flatten_channels({cfeat});
             X(kk,:) = Xt;
             
 
@@ -159,7 +162,7 @@ for idataf = 1:length(data_folders)
                 % compute on windows
                 %ctemp_all{i} = spm_ut_compute_feat_selected(x,sel_feat,fs);
             end
-            [Xt aFeatNames] = spm_ut_flatten_channels(ctemp_all);
+            [Xt, aFeatNames] = spm_ut_flatten_channels(ctemp_all);
             X(kk,:) = Xt;
             data_quality(kk) = mean(q);
         end
